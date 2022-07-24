@@ -9,25 +9,18 @@
 
 
 import EventCard from '@/components/EventCard'
-import EventService from '@/services/EventService'
 export default {
   name: 'Home',
   components: {
     EventCard
   },
-  data() {
-    return {
-      events: null
-    }
-  },
   created() {
-    EventService.getEvents()
-      .then(response => {
-        this.events = response.data
-      })
-      .catch(error => {
-        console.log(error)
-      })
+    this.$store.dispatch('fetchEvents')
+  },
+  computed: {
+    events() {
+      return this.$store.state.events
+    }
   }
 }
 </script>
