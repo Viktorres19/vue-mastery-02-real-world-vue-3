@@ -59,6 +59,16 @@
       "date": "111",
       "time": "222",
       "organizer": "Viktor Lukyanchenkov"
+    },
+    {
+      "id": "926b83a7-3274-4784-bb86-a871a1a355ae",
+      "category": "nature",
+      "title": "Dog",
+      "description": "Cat",
+      "location": "USA",
+      "date": "11.12",
+      "time": "9:09",
+      "organizer": "Viktor Lukyanchenkov"
     }
   ]
 }
